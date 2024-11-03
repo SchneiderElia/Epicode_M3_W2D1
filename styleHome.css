@@ -76,8 +76,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    /* background-color: #d19339; */
+   /*  background-color: #d19339; */
     gap: 25px;
+    height: 680px;
+    overflow: scroll;
 }
 
 .colThree{
@@ -166,20 +168,20 @@ ul {
 
 .time {
   position: absolute;
-  top: 160px;
+  top: 175px;
   left: 135px;
-/*   background-color: rgba(0, 0, 0, 0.726); */
+  background-color: rgba(0, 0, 0, 0.726);
+  color:#d19339;
   border-radius: 100px;
   padding: 0px 10px;
   padding-bottom: 2px;
   font-family: "Outfit";
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .card div p span:nth-child(2){
   margin-left: 50px;
   font-size: 15px;
-  
 }
 
 /* .card div p:nth-child(2),
@@ -201,20 +203,29 @@ ul {
 
 .card div p span:nth-child(1) {
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100px;
+  
 }
 
-.card div span{
+.card div p{
   font-size: 13px;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: "Outfit";
+  width: 170px;
+  
+  
+}
+
+.card div :nth-child(4){
+  display: flex;
+  align-items: center;
 }
 
