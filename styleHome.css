@@ -57,6 +57,7 @@ ul {
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
   
   }
 
@@ -278,12 +279,19 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 400px;
+  height: 350px;
   overflow: scroll;
   overflow-x: hidden;
   -ms-overflow-style: none; /* Nasconde la barra di scorrimento in IE e Edge */
   scrollbar-width: none; /* Nasconde la barra di scorrimento in Firefox */
   
+}
+
+.colThree h2 {
+  font-family: "Bebas Neue", serif;
+  font-size: clamp(1.25rem, 0.8036rem + 2.381vw, 2.5rem);
+  color: whitesmoke;
+  margin-bottom: 10px;
 }
 
 .ibyBox :-webkit-scrollbar { 
@@ -379,6 +387,15 @@ ul {
 }
 
 /*  ---------------------------------------------------------- */
+.colThree h3 {
+  font-family: "Bebas Neue", serif;
+  font-size: clamp(1.25rem, 0.8036rem + 2.381vw, 2.5rem);
+  color: whitesmoke;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -390,10 +407,10 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 225px;
+  height: 160px;
   overflow: scroll;
   overflow-x: hidden;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   
 -ms-overflow-style: none; /* Nasconde la barra di scorrimento in IE e Edge */
 scrollbar-width: none; /* Nasconde la barra di scorrimento in Firefox */
