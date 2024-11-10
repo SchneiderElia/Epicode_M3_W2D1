@@ -102,6 +102,8 @@ ul {
   
 }
 
+
+
   .frame {
     display: flex;
     width: 250px;
@@ -470,4 +472,73 @@ display: none; /* Nasconde la barra di scorrimento in Chrome, Safari e Opera */
   width: 170px; 
   align-items: center;
   
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  .colOne {order: 1;}
+  .colTow { order: 3;}
+  .colThree { order: 2; margin-left: 100px;}
+  .container-fluid {display: flex;}
+  .container-fluid > div:nth-child(2) h3 {margin-top: 0px; margin-bottom: 10px;}
+  .artistList {height: 230px;}
+  .lbyBox {height: 230px; gap: 35px;}
+  .lbycard > div:nth-child(2) {display: none;}
+  .colTow {width:100%; justify-content: space-evenly; }
+
+}
+
+@media (max-width: 820px){
+
+  .colThree {margin-left: 0px;}
+  .container-fluid > div:nth-child(1) {width: 240px;}
+  .lbycard > div:first-child > div p {width: 130px; }
+}
+
+
+@media (max-width: 430px){
+
+  .frame {width: 200px;}
+  .photo img {width: 120px; height: 120px;}
+  .data {margin-top: 0;}
+  .boxP {margin-top: 30px; height: 100px;}
+  .lbyBox , .artistList {display: none;}
+  .colThree { flex-wrap: nowrap;}
+  .colThree > div:nth-child(1) {display: block; rotate: 270deg; width: 350px; display: flex; margin-bottom: 260px; 
+                                  margin-left: 0px; height: 0px; position: absolute; top: 150px; left: 120px;
+                              }
+  .container-fluid > div:nth-child(1) { width: 140px;}
+  .content-mid {padding: 0px}
+  .colOne {margin-left: 70px;}
+    .colTow { padding: 0px 20px; justify-content: center; padding:0; gap: 15px; margin-top: -100px; padding-top: 40px; }
+
+.colTow::before {
+  content: ''; 
+  position: absolute;
+  top: 460px;
+  width: 100%;
+  height: 0px; /* Spessore del bordo */
+  /* border-top: 7px solid black; */
+  box-shadow: 0 30px 30px 40px rgba(0, 0, 0, 0.582); 
+
+
+  z-index: 1; /* Assicura che il bordo sia sopra il contenuto */
+}
+  .card {width: 160px; height: 260px; /* background-color:chocolate; */}
+  .coverCardBox {width: 140px; height: 140px;}
+  .time {display: none;}
+  .card div{display: flex; flex-direction: column; width: auto;}
+
+ .card div :nth-child(3) {width: 120px; font-size: 16px;}
+ .card div p {width: 120px; font-size: 18px;}
+ .content-mid {margin-top: 0px;}
+ 
+  
+
+}
+@media (max-width: 430px){
+
 }
